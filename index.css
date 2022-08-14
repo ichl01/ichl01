@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=M+PLUS+1p&family=Noto+Sans+JP:wght@300&display=swap');
+
+:root {
+    --height3: 3%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Jost', 'M PLUS 1p', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-wrap: anywhere;
+    margin-right: 10%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+.main-txt {
+    font-size: 10vw;
+    animation: SlideIn 0.5s;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    padding: 5%;
+}
+
+.dot {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    border-radius: 50% 50% 0 50%;
+    background-color: white;
+    width: 7.5vh;
+    height: 7.5vh;
+    mix-blend-mode: difference;
+}
+
+.main-txt-box {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-45%, -45%);
+    -webkit-transform: translate(-45%, -45%);
+    -ms-transform: translate(-45%, -45%);
+    line-height: 3vw;
+}
+
+.sub {
+    margin-top: 0;
+    font-size: 5vw;
+    animation: SlideIn 0.7s;
+}
+
+.dottxt {
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    line-height: 5%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.black {
+    color: white;
+    background-color: black;
+}
+
+.sns {
+    margin: 5%;
+}
+
+@keyframes SlideIn {
+    0% {
+        opacity: 0;
+        /*初期状態では透明に*/
+        -webkit-transform: translateX(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        -ms-transform: translateX(0);
+    }
+}
+
+@media (min-width: 671px) {
+    .worksbase {
+        display: flex;
+    }
+
+    .works {
+        flex: 1;
+    }
+}
